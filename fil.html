@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filipino-Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+</head>
+<style>
+    .maincont{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-control{
+      border-color: black;
+    }
+    body{
+        background: linear-gradient(90deg, #7BC9FF,#B3C8CF);
+    }
+
+    .color{
+      background: linear-gradient(90deg, #F7C566,#E59BE9);
+    }
+
+    .text{
+      font-family: 'Courier New', Courier, monospace;
+      color: black;
+      
+    }
+
+    .story{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 15%;
+      margin-left: 15%;
+    }
+
+    .h5{
+      text-align: center;
+    }
+
+    @media (max-width: 680px) {
+      .answer{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+      }
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-inverse navbar-fixed-top color">
+        <div class="container-fluid">
+          <a class="navbar-brand" >MT-Fil-Quiz</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="mtb.html">Mother-Tongue</a>
+              <a class="nav-link" href="fil.html">Filipino</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <br>
+    
+    <!--tITLE AND INSTRUCTIONS-->
+    <h3 style="text-align: center;">Filipino</h3>
+    <h5 class = "h5">Basahin ang kuwento sa loob ng kahon at sagutan ang mga sumusunod na tanong. Piliin ang titik ng tamang sagot.</h5S>
+    
+    <br>
+    <br>
+    <div class="card story">
+        <div class="card-body">
+          <h5 class="card-title">Ang anak at ang Nanay</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+          <p class="card-text" style="font-family: 'Courier New', Courier, monospace;">Yolly ang pangalan ng nanay ni Manilyn. Sila ay palaging nagtutulngan sa gawaing bahay. 
+            Isang araw, ang mag-ina ay sabay na pumunta sa simbahan upang magpasalamat sa biyayang ibinibigay ng Panginoon. 
+            Biglang bumuhos ang malakas na ulan nang makapasok sa loob ng simbahan ang mag-ina na sina Aling Yolly at Manilyn. 
+            Nagpasalamat ang mag-ina dahil hindi sila nabasa ng malakas na ulan.</p>
+        </div>
+    </div>
+
+
+  <form>
+
+    <!--divs for Fil-->
+    <div id = "mathematics" class = "maincont">
+
+      <div class="mb-3 answer" >
+        <br>
+        <label class="form-label text"><strong>Pangalan</strong></label>
+        <input type="text" class="form-control " id="name" aria-describedby="emailHelp">
+      </div>
+
+
+      <!--Fil Q1-->
+      <div class="mb-3 answer" >
+        <label class="form-label text"><strong>1. Ano ang pamagat ng kuwento?</strong></label>
+        <select class="form-select answer" id = "ans1" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Ang Nanay at ang anak</option>
+            <option value="B">B. Ang anak at Nanay</option>
+            <option value="C">C. Ang anak at ang Nanay</option>
+        </select>
+      </div>
+
+      <!--Fil Q2-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>2. Sino ang nanay sa binasa?</strong></label>
+        <select class="form-select answer" id = "ans2" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Yollyn</option>
+            <option value="B">B. Yolly</option>
+            <option value="C">C. Manilyn</option>
+        </select>
+      </div>  
+
+      <!--Fil Q3-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>3. Ano ang huling nangyari sa kwento?</strong></label>
+        <select class="form-select answer" id = "ans3" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Sabay naglakad ang mag-ina para magsimba.</option>
+            <option value="B">B. Nagpasalamat ang mag-ina dahil hindi sila naabutan ng malakas na ulan.</option>
+            <option value="C">C. Biglang bumuhos ang malakas na ulan.</option>
+        </select>
+      </div>  
+
+      <!--Fil Q4-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>4.Bakit pumunta ang mag-ina sa simbahan?</strong></label>
+        <select class="form-select answer" id = "ans4" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. para magdasal</option>
+            <option value="B">B. upang makita ang loob ng simbahan</option>
+            <option value="C">C. para magpasalamat sa biyayang natatanggap</option>
+        </select>
+      </div>  
+
+      <!--Fil Q5-->
+      <div class="mb-3 answer">
+        <label class="form-label text"><strong>5. Kung ikaw si Manilyn at nangyari na nabasa ka ng ulan, magpapasalamat ka pa din ba sa Diyos?</strong></label>
+        <select class="form-select answer" id = "ans5" aria-label="Default select example">
+            <option selected>Piliin ang sagot</option>
+            <option value="A">A. Opo, kasi siya ang dakilang tagapagbigay ng biyaya.</option>
+            <option value="B">B. Opo, kasi nakapaligo ako sa ulan.</option>
+            <option value="C">C. Hindi po, kasi nabasa ako sa ulan.</option>
+        </select>
+      </div>  
+
+      <button type="button" id = "engbtn" class="btn btn-primary">Submit</button>  
+    </div>
+      
+    
+  </form>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="fil.js" ></script>
+</body>
+</html>
